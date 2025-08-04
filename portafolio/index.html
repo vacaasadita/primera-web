@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+    <header>
+      <img src="img/logo1.png" alt="logo de junior.">
+      <h1>
+        <div class="palabra">
+          <span>J</span><span>u</span><span>n</span><span>i</span><span>o</span><span>r</span>
+        </div>
+        <span class="espacio"></span>
+        <div class="palabra">
+          <span>N</span><span>i</span><span>ñ</span><span>o</span>
+        </div>
+        <span class="espacio"></span>
+        <div class="palabra">
+          <span>P</span><span>o</span><span>n</span><span>c</span><span>e<span class="punto">.</span></span>
+        </div>
+      </h1>
+      <p>Me dedico al diseño web.
+        Creo sitios modernos, responsivos y bien presentados, cuidando cada       detalle para que todo se vea claro, funcional y con buen estilo.</p>
+        <nav>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="#">Servisios</a></li>
+            <li><a href="#section__contacto">Contanto</a></li>
+          </ul>
+        </nav>
+    </header>
+  </div>
+  <script>
+    document.getElementById("section__contacto").focus();
+  </script>
+  <section id="section__contacto" tabindex="-1" aria-labelledby="legend__contacto">
+    <h2>Contactame aqui<span class="punto">.</span></h2>
+    <form autocomplete="off" action="https://formsubmit.co/juniorninoponce@gmail.com" method="post">
+      <fieldset>
+        <legend legend__contacto>Informacion de contacto<span class="punto">.</span></legend>
+        <div class="form-input">
+          <label>Nombre
+            <input name="nombre" type="text" placeholder="jhon" required>
+          </label>
+          <label>Apellido
+            <input name="apellido" type="text" placeholder="cena" required>
+          </label>
+          <label>Numero de telefono
+            <input name="celular" type="text" placeholder="111-222-333" required>
+          </label>
+        </div>
+        <div class="form-input">
+          <label>email
+            <input name="correo" type="email" placeholder="example@example.com" required>
+          </label>
+        </div>
+        <div class="form-input">
+          <label>Ingresa tu consulta
+            <textarea name="solicitud" rows="5" name="" placeholder="ingreasa tu consulta aqui" maxlength="300"></textarea>
+          </label>
+        </div>
+      </fieldset>
+      <div class="form-input">
+        <button type="submit">Contactar</button>
+      </div>
+    </form>
+  </section>
+</body>
+</html> 
