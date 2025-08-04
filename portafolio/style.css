@@ -1,0 +1,258 @@
+@font-face {
+  font-family: "Batmfa";
+  src: url(font/batmfa__.ttf);
+}
+
+html, body {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url(img/9129518.jpg);
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 5px;
+  text-align: center;
+}
+
+header img {
+  width: clamp(80px, 10vw, 250px);
+  margin: 20px auto;
+  filter: drop-shadow(0 0 5px #33d4ff);
+  transition: transform 1s ease-in-out;
+  display: inline-block;
+}
+
+header img:hover,
+header img:active {
+  transform: rotate(360deg);
+  width: clamp(90px, 10.5vw, 260px);
+
+}
+
+header h1{
+  color: #D1E3DD;
+  text-align: center;
+  margin-top: 50px;
+  font-size: clamp(1.5rem, 5vw, 3.6rem);
+  font-family: "Batmfa",Arial, Helvetica, sans-serif;
+  letter-spacing: 5px;
+}
+
+.palabra {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.punto {
+  color: transparent;
+}
+
+.punto:hover {
+  color: transparent;
+  cursor: default;
+}
+
+header h1 span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.espacio {
+  color: transparent;
+}
+
+.espacio:hover {
+  color: transparent;
+  cursor: default;
+}
+
+header h1 span:hover {
+  transform: translateY(-10px);
+  color: #00ffff;
+}
+
+header p {
+  color: #c7c7c7;
+  font-size: clamp(1rem,3vw,1.4rem);
+  margin: 50px auto 0 auto; /* arriba 50px, abajo 0, centrado horizontal */
+  max-width: 500px;
+  padding: 0 20px; /* para que no choque en móviles */
+  text-align: justify;
+  font-family: sans-serif;
+  font-weight: 300;
+}
+
+nav {
+  margin: auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-top: 80px;
+  background-color: #00BFFF;
+  padding: 8px 20px;
+  margin: 80px 20px;
+  border-radius: 30px;
+}
+
+nav li:hover,
+nav li:active {
+  background-color: #33ccff;
+  box-shadow: 0 0 10px #33d4ff;
+  color: #ccc;
+}
+
+a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: clamp(1rem,5vw,1.5rem);
+}
+
+#section__contacto {
+  background-color: #273b75;
+  margin: 0;
+  padding-bottom: 100px;
+}
+
+h2 {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: clamp(1rem, 5vw, 2rem);
+  padding: 100px 0 0 0;
+
+}
+
+form {
+  background-color: transparent;
+  padding: 20px 0;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 0 25px #fff6;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.form-input {
+  padding: 8px 7px;
+}
+
+input, textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px 12px;
+  border: 1px solid #4f9;
+  box-shadow: 0 0 5px #0002;
+  background-color: transparent;
+  border-radius: 4px;
+  color: #ddd;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #Ccc;
+}
+
+input:focus, textarea:focus {
+  border: 1px #9019a8 solid;
+  background-color: #ccc;
+  outline: none;
+  color: #333;
+}
+
+textarea {
+  min-height: 100%;
+  resize: none;
+  font-family: sans-serif;
+}
+
+label {
+  font-size: clamp(0.8rem,3vw,1.25rem);
+  line-height: 1.5;
+  color: #Fff;
+}
+
+fieldset {
+  border-radius: 10px;
+  border: 1px solid #666;
+  padding: 10px 7px 20px 7px;
+  margin: 20px;
+}
+
+legend {
+  padding: 0 6px;
+  background-color: #9a336f;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: clamp(0.8rem, 5vw, 1.3rem);
+  color: #Fff;
+}
+
+button {
+  display: block;
+  margin: auto;
+  padding: 5px 15px;
+  font-size: clamp(1rem,5vw,1.4rem);
+  border-radius: 10px;
+  outline: none;
+  background-color: #9a336f;
+  color: #ccc;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #b44fc4;
+  font-weight: bold;
+}
+
+@media (max-width:800px) {
+  header h1  {
+    margin-top: 10px;
+  }
+
+  header p {
+    margin: 20px auto 0 auto;
+  }
+
+  nav {
+    margin-top: 50px;
+    padding: 0;
+  }
+
+  nav li {
+    display: block;
+    width: 90%;
+    max-width: 300px;
+    margin: 10px auto; /* Centrado, margen vertical de 10px */
+    padding: 5px 0;
+    box-sizing: border-box;
+  }
+  
+}
+
+@media (max-width:600px) {
+  form {
+    width: 90%;
+  }
+
+  h2 {
+    padding: 20px 0 0 0;
+  }
+}
